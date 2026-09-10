@@ -1,0 +1,17 @@
+client:
+  batch_size: 128
+  fed_algo: FedGeo
+  fraction: 1
+  lr: 0.01
+  momentum: 0
+  num_local_epoch: 1
+system:
+  dataset: MNIST
+  dirichlet_alpha: 1
+  i_seed: 0
+  model: LeNet
+  num_client: 10
+  num_round: 100
+  prox_beta: 0.5
+  q_bits: 8
+  res_root: results

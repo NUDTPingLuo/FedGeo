@@ -1,0 +1,21 @@
+client:
+  batch_size: 128
+  fed_algo: FedGeo
+  fedcm_alpha: 0.1
+  fedsol_rho: 0.1
+  fedsol_temperature: 3.0
+  fraction: 1
+  lr: 0.01
+  momentum: 0
+  num_local_epoch: 1
+system:
+  dataset: CIFAR10
+  dirichlet_alpha: 0.01
+  i_seed: 0
+  min_client_samples: 256
+  model: CNN
+  num_client: 10
+  num_round: 100
+  prox_beta: 0.5
+  q_bits: 32
+  res_root: results
